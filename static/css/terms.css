@@ -1,0 +1,20 @@
+.content-toa {
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+  font-family: "Montserrat", cursive;
+  color: gray;
+}
+.content-toa h1 {
+  font-size: 4em;
+  font-weight: bolder;
+  margin-bottom: 1em;
+  color: black;
+}
+.content-toa li {
+  margin-top: 10px;
+}
+.content-toa strong {
+  color: black;
+}
+
+/*# sourceMappingURL=terms.css.map */

@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cultr Toolkit</title>
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+
+    <!-- Google Fonts   -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand|Roboto&display=swap"
+          rel="stylesheet">
+    <!-- Font awesome   -->
+    <script src="https://kit.fontawesome.com/a243faa57f.js"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block css_include %}
+    {% endblock %}
+</head>
+<body>
+    <!-- Top Navigation. Inspired by brilliant, will become visible only when user starts scrolling  -->
+    <div class="navigation" id="main-nav">
+        <div class="container">
+            <a href="/#" class="logo-nav">
+                Cultr Toolkit
+                <i class="fas fa-toolbox"></i>
+            </a>
+            <a href="#" class="btn btn-outline-dark nav-button d-inline-block">
+                Log in
+                <i class="fas fa-sign-in-alt"></i>
+            </a>
+            <a href="#" class="btn btn-light nav-button d-inline-block">
+                Register
+                <i class="fas fa-user-plus"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Header again, Inspired by brilliant   -->
+    <header>
+        <div class="container">
+            <a href="/#" class="header-title">
+                Cultr Toolkit
+                <i class="fas fa-toolbox"></i>
+            </a>
+            <a href="#" class="header-login btn btn-outline-dark d-block">
+                Log in
+                <i class="fas fa-sign-in-alt"></i>
+            </a>
+        </div>
+    </header>
+
+    {% block body_content %}
+    {% endblock %}
+
+    <hr>
+    <!-- Footer content    -->
+    <footer>
+        <div class="container">
+            <div class="row inner-wrap">
+                <div class="legal col-sm col-md-6">
+                    <a href="/" style="color: black; text-decoration: none"><h4>Cultr Toolkit <i class="fas fa-toolbox"></i></h4></a>
+                    <p>Copyright © 2019. <br> Joel Gehman and Matthew Grimes <br> All rights reserved.</p>
+                    <a href="/terms">Terms of Use</a>
+                    <br>
+                    <a href="/privacy">Privacy Policy</a>
+                    <br>
+                    <a href="/#acknowledgements">Acknowledgements</a>
+                </div>
+                <div class="social col-sm col-md-6">
+                    <a href="https://www.facebook.com/cultrtoolkit" target="fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/CultrToolkit" target="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/cultr" target="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        window.onscroll = function (ev) {
+            var top  = window.pageYOffset || document.documentElement.scrollTop;
+            var ele = $('#main-nav');
+
+            if (top < 300) {
+                ele.removeClass("show-navbar");
+            } else {
+                ele.addClass("show-navbar");
+            }
+        }
+
+    </script>
+
+    {% block js_include %}
+    {% endblock %}
+</body>
+</html>

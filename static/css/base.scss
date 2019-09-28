@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+}
+
+//-------------------------- end of common ------------------------------------------------
+
+header {
+
+  padding-top: 1em;
+
+  .header-title {
+    font-family: "Quicksand", cursive;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: x-large;
+  }
+
+  .header-login {
+    float: right;
+    border-radius: 25px;
+  }
+}
+
+
+.navigation {
+  // this will slowly move down to where its supposed to be
+  transform: translateY(-150px);
+  background-color: white;
+  padding: 1em 0;
+  z-index: 111;
+  position: fixed;
+  width: 100vw;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  // transition animations
+  transition: transform 0.3s ease-in;
+
+  .logo-nav {
+    font-family: "Quicksand", cursive;
+    font-size: x-large;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+  }
+
+  .nav-button {
+    position: relative;
+    float: right;
+    margin-right: 1vw;
+    font-size: medium;
+    border-radius: 25px;
+  }
+}
+
+.show-navbar {
+  transform: translateY(0px);
+}
+
+footer {
+
+  .inner-wrap {
+    margin: 4em 0;
+  }
+
+  .legal {
+
+    padding-left: 0;
+    font-family: "Quicksand", cursive;
+
+    h4 {
+      font-size: larger;
+      font-weight: bolder;
+      color: black;
+    }
+    p {
+      color: gray;
+    }
+  }
+
+  .social {
+    font-size: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+      padding: 0 30px;
+      margin-top: 3vh;
+      color: black;
+    }
+  }
+}

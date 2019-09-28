@@ -1,0 +1,119 @@
+.info-text {
+  color: gray;
+  line-height: 35px;
+}
+
+.gradient-text {
+  background: #ee0979;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.header-text {
+  font-size: 4em;
+  font-weight: bolder;
+  margin-bottom: 1em;
+}
+
+.left-navigation {
+  position: fixed;
+  float: left;
+  z-index: 112;
+  padding: 2em 2em;
+  border: 1px solid #CDCDCD;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 6%;
+  text-align: center;
+  font-family: "Montserrat", cursive;
+  font-weight: bolder;
+  background-color: white;
+}
+.left-navigation .left-navigation-list {
+  padding: 0;
+  list-style-type: none;
+}
+.left-navigation .left-navigation-list li {
+  margin-top: 2em;
+}
+.left-navigation .left-navigation-list li a {
+  text-decoration: none;
+  color: black;
+  transition-duration: 0.5s;
+}
+.left-navigation .left-navigation-list li a:hover {
+  background-color: black;
+  color: white;
+}
+@media (max-width: 1199.98px) {
+  .left-navigation {
+    display: none;
+  }
+}
+
+#introduction {
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+  font-family: "Montserrat", cursive;
+}
+#introduction h1 {
+  margin-bottom: 2em !important;
+}
+#introduction .image {
+  display: flex;
+  justify-content: center;
+  z-index: -2;
+  transform: translateY(-100px);
+}
+#introduction .image img {
+  object-fit: cover;
+  width: 100%;
+  max-width: 500px;
+}
+
+#tools {
+  margin: 5vh 0;
+  font-family: "Montserrat", cursive;
+  text-align: center;
+}
+#tools .tool {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5vh;
+  border: 1px solid #CDCDCD;
+  padding: 1em 3em;
+}
+#tools .describe h3 {
+  color: black;
+  font-weight: bolder;
+  font-size: larger;
+  margin-bottom: 1em;
+}
+
+#acknowledgements {
+  margin: 5vh 0;
+  font-family: "Montserrat", cursive;
+  text-align: center;
+}
+
+#contact {
+  margin: 5vh 0;
+  font-family: "Montserrat", cursive;
+}
+#contact .contact-form {
+  color: gray;
+  box-shadow: 0 0 3px #ccc;
+  padding: 4em 2em;
+  border-radius: 25px;
+}
+#contact button {
+  width: 100%;
+  margin-top: 2em;
+}
+
+/*# sourceMappingURL=index.css.map */

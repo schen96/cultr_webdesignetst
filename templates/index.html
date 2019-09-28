@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    {% block css_include %}
+
+    <link rel="stylesheet"
+          href="{% static 'css/index.css' %}">
+
+    {% endblock %}
+</head>
+<body>
+
+    {% block body_content %}
+    <!-- Left Navigation, although this probably needs to dissapear when user is on mobile -->
+    <div class="left-navigation visible">
+        <ul class="left-navigation-list">
+            <li><a href="#introduction">Home</a></li>
+            <li><a href="#introduction">About</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Introduction section -->
+    <section id="introduction">
+        <div class="container">
+            <h1 class="header-text gradient-text">What is Cultr?</h1>
+            <div class="row">
+                <div class="description col-xs col-md-7">
+                    <p class="info-text">Social scientists have long been interested in studying cultural production. The problem was how?
+                        The Internet solved the problem of finding new and interesting cultural data. But given the huge
+                        volume of new and constantly updating information available on the Web, it created a new problem
+                        – accessing and making use of all of this amazing data.
+
+                        Cultr offers a solution to this problem. Cultr is a suite of web-based tools designed to provide
+                        researchers with a convenient and highly accessible means of studying cultural production via digital media.
+                        With our suite of text, image and Twitter data collection tools, researchers can access data from a range of
+                        web sites including company websites, blogs, and social media.
+
+                        These tools are provided free of charge to the public. All we ask is that you cite our work as
+                        you produce and publish your own: Gehman & Grimes, 2015-2017. http://cultrtoolkit.com</p>
+                </div>
+
+                <div class="image col-xs col-md-5">
+                    <img src="https://scontent.fyyc5-1.fna.fbcdn.net/v/t1.0-9/13110_1411067815883650_255878890221247679_n.png?_nc_cat=100&_nc_oc=AQnAKsXdjc_wq8Y0rxUvKQvcEFftxMJ5ZAXiYqBArTsL5Kki5spWrkfKURcGcbmC68zfZE_edSWAdPVdVR6xOv0h&_nc_ht=scontent.fyyc5-1.fna&oh=11146078331119ea661c9de1c8c1e221&oe=5E33CEA2"
+                         alt="cultr_image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <!--  Tools -->
+    <section id="tools">
+        <div class="container">
+
+            <h1 class="header-text gradient-text">Our tools</h1>
+
+            <div class="row tool">
+                <div class="left-item image col-md-6">
+                    <img src="{% static 'img/tools/word_scraper.png' %}" alt="">
+                </div>
+                <div class="right-item describe col-md-6">
+                    <h3>Web Scraper</h3>
+                    <p class="info-text">Collect data on the use of particular words across any set of web sites.</p>
+                </div>
+            </div>
+            <div class="row tool">
+                <div class="left-item describe col-md-6">
+                    <h3>Image Scraper</h3>
+                    <p class="info-text">Collect data on the use of particular images(e.g.,frequency, area, placement) across any set of web sites.</p>
+                </div>
+                <div class="right-item image col-md-6">
+                    <img src="{% static 'img/tools/image_scraper.png' %}" alt="">
+                </div>
+            </div>
+            <div class="row tool">
+                <div class="left-item image col-md-6">
+                    <img src="{% static 'img/tools/twitter_network_scraper.png' %}" alt="">
+                </div>
+                <div class="right-item describe col-md-6">
+                    <h3>Tweet Scraper</h3>
+                    <p class="info-text">Collect data on the use of particular words, hash tags, and mentions across any set of Twitter handles.</p>
+                </div>
+            </div>
+            <div class="row tool">
+                <div class="left-item describe col-md-6">
+                    <h3>Identity Scraper</h3>
+                    <p class="info-text">Find Twitter, Facebook, LinkedIn and other social media accounts for companies, people or other entities you are studying.</p>
+                </div>
+                <div class="right-item image col-md-6">
+                    <img src="{% static 'img/tools/identity_scraper.png' %}" alt="">
+                </div>
+            </div>
+            <div class="row tool">
+                <div class="left-item image col-md-6">
+                    <img src="{% static 'img/tools/tweet_scraper.png' %}" alt="">
+                </div>
+                <div class="right-item describe col-md-6">
+                    <h3>Twitter Network Scraper</h3>
+                    <p class="info-text">Explore the twitter network of friends and followers of any number of twitter handles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <!-- Acknowledgements   -->
+    <section id="acknowledgements">
+        <div class="container">
+            <h1 class="header-text gradient-text">Acknowledgements</h1>
+            <p class="info-text">
+                Cultr is the brainchild of <strong>Joel Gehman</strong> and <strong>Matthew Grimes</strong>, assistant professors at the University of Alberta School of Business.
+                Funding for the beta development of Cultr was provided in part by grants from the Canadian Social Sciences and Humanities Research Council,
+                the Killam Research Fund, the Alberta School of Business, and the Canadian Centre for Corporate Social Responsibility. For their help with software development,
+                we thank <strong>Alexander Cheung</strong>, <strong>Shakeeb Ahmed</strong>, <strong>Tyler Lazar</strong>, <strong>Kimberly Wu</strong>, and <strong>Eddie Santos</strong>.
+                We thank <strong>Devon Mielke</strong>for helping with the website infrastructure.
+
+                The Cultr team uses Asana to coordinate. We use Git with Bitbucket to collaborate on code. The web crawlers
+                use the Scrapy Python library as a base, and heavily extend upon it. This website is powered by the Django Web Framework.
+            </p>
+        </div>
+    </section>
+
+    <hr>
+    <!-- contact   -->
+    <section id="contact">
+        <form action="#">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="description col-md col-lg-6">
+                    <h1 class="header-text gradient-text">Contact</h1>
+                    <p class="info-text">Have a question about Cultr, or a suggestion for future development? Contact Us via our personal pages
+                        and we will be in touch with you shortly. Joel and Matthew.</p>
+                </div>
+                <div class="contact-form col-md col-lg-6">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="input-first-name">First name</label>
+                                <input type="text" class="form-control" id="input-first-name" placeholder="John">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="input-last-name">Last name</label>
+                                <input type="text" class="form-control" id="input-last-name" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Company / Institution</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="University of Alberta">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-question">How can we help you?</label>
+                            <textarea class="form-control"
+                                      rows="5"
+                                      id="input-question"
+                                      placeholder="What is the airspeed velocity of an unladen swallow?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Submit your question</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </form>
+    </section>
+
+    {% endblock %}
+
+</body>
+</html>

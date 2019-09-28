@@ -1,0 +1,19 @@
+.content-privacy {
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+  font-family: "Montserrat", cursive;
+}
+.content-privacy h1 {
+  font-size: 4em;
+  font-weight: bolder;
+  margin-bottom: 1em;
+  color: black;
+}
+.content-privacy p {
+  color: grey;
+}
+.content-privacy strong {
+  color: black;
+}
+
+/*# sourceMappingURL=privacy.css.map */

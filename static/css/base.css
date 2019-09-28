@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+}
+
+header {
+  padding-top: 1em;
+}
+header .header-title {
+  font-family: "Quicksand", cursive;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  font-size: x-large;
+}
+header .header-login {
+  float: right;
+  border-radius: 25px;
+}
+
+.navigation {
+  transform: translateY(-150px);
+  background-color: white;
+  padding: 1em 0;
+  z-index: 111;
+  position: fixed;
+  width: 100vw;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in;
+}
+.navigation .logo-nav {
+  font-family: "Quicksand", cursive;
+  font-size: x-large;
+  font-weight: bolder;
+  color: black;
+  text-decoration: none;
+}
+.navigation .nav-button {
+  position: relative;
+  float: right;
+  margin-right: 1vw;
+  font-size: medium;
+  border-radius: 25px;
+}
+
+.show-navbar {
+  transform: translateY(0px);
+}
+
+footer .inner-wrap {
+  margin: 4em 0;
+}
+footer .legal {
+  padding-left: 0;
+  font-family: "Quicksand", cursive;
+}
+footer .legal h4 {
+  font-size: larger;
+  font-weight: bolder;
+  color: black;
+}
+footer .legal p {
+  color: gray;
+}
+footer .social {
+  font-size: 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .social a {
+  padding: 0 30px;
+  margin-top: 3vh;
+  color: black;
+}
+
+/*# sourceMappingURL=base.css.map */
